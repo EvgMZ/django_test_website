@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="10">
+    <tr>
+        <th>Id</th>
+        <th>дата</th>
+        <th>Имя</th>
+        <th>Телефон</th>
+    </tr>
+{% for obj in object_list  %}
+    <tr>
+        <th>{{obj.id}}</th>
+        <th>{{obj.order_dt}}</th>
+        <th>{{obj.order_name}}</th>
+        <th>{{obj.order_phone}}</th>
+    </tr>
+{% endfor %}
+</body>
+</html>
